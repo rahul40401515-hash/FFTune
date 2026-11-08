@@ -1,0 +1,26 @@
+name: FFTune
+options:
+  bundleIdPrefix: com.venice
+  deploymentTarget:
+    iOS: "17.0"
+targets:
+  FFTune:
+    type: application
+    platform: iOS
+    sources: [Sources]
+    info:
+      path: Sources/Info.plist
+      properties:
+        CFBundleDisplayName: FF Tune
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UIBackgroundModes: [audio]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.venice.fftune
+        MARKETING_VERSION: "2.0"
+        CURRENT_PROJECT_VERSION: "2"
+        CODE_SIGN_IDENTITY: ""
+        CODE_SIGNING_REQUIRED: "NO"
+        CODE_SIGNING_ALLOWED: "NO"
+        SWIFT_VERSION: "5.0"
